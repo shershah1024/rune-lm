@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Generate CONVERSATIONAL / VERBOSE training data for osascript-lm.
+Generate CONVERSATIONAL / VERBOSE training data for Rune-lm.
 
 The model handles short commands well but struggles with longer, more natural
 phrasing like "hey can you open Chrome for me" or "I want to put my computer

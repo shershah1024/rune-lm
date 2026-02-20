@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-HTTP server wrapping osascript-lm inference.
+HTTP server wrapping Rune-lm inference.
 
 Exposes two endpoints:
   GET  /health            → {"status": "ok"}
@@ -146,7 +146,7 @@ class OsascriptHandler(BaseHTTPRequestHandler):
 # ---------------------------------------------------------------------------
 
 def main():
-    parser = argparse.ArgumentParser(description="osascript-lm HTTP server")
+    parser = argparse.ArgumentParser(description="Rune-lm HTTP server")
     parser.add_argument("--model-dir", default="model", help="Path to model directory")
     parser.add_argument("--port", type=int, default=39284, help="Server port")
     parser.add_argument("--host", default="127.0.0.1", help="Server host")

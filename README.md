@@ -1,4 +1,4 @@
-# osascript-lm
+# Rune-lm
 
 A 20.5M parameter decoder-only transformer that converts natural language commands into AppleScript, built from scratch and trained on Apple Silicon using [MLX](https://github.com/ml-explore/mlx).
 
@@ -162,7 +162,7 @@ Tested across 42+ commands:
 ## Project structure
 
 ```
-osascript-lm/
+rune-lm/
 ├── model/
 │   ├── model.py          # Transformer architecture (20.5M params)
 │   ├── config.json        # Model hyperparameters

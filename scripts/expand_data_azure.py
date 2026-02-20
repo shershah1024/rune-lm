@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Generate training data for osascript-lm using Azure OpenAI REST API (httpx).
+Generate training data for Rune-lm using Azure OpenAI REST API (httpx).
 
 Split into focused pipelines:
   1. timers_durations   — timer for X minutes, countdown, sleep durations

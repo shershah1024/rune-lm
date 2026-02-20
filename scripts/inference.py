@@ -1,5 +1,5 @@
 """
-Inference script for the osascript-lm model.
+Inference script for the Rune-lm model.
 Takes natural language input, generates AppleScript, optionally executes it.
 """
 
@@ -110,7 +110,7 @@ def execute_applescript(script: str) -> tuple[bool, str]:
 
 def interactive_mode(model, tokenizer, config, auto_execute: bool = False):
     """Interactive REPL for generating and executing AppleScript."""
-    print("osascript-lm — Natural Language → AppleScript")
+    print("Rune-lm — Natural Language → AppleScript")
     print("Type 'quit' to exit, 'help' for commands\n")
 
     while True:
@@ -161,7 +161,7 @@ def interactive_mode(model, tokenizer, config, auto_execute: bool = False):
 
 
 def main():
-    parser = argparse.ArgumentParser(description="osascript-lm inference")
+    parser = argparse.ArgumentParser(description="Rune-lm inference")
     parser.add_argument("--model-dir", default="model", help="Path to model directory")
     parser.add_argument("--checkpoint", default=None, help="Path to specific checkpoint")
     parser.add_argument("--command", type=str, default=None, help="Single command to run")
